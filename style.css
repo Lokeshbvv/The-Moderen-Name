@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('../images/gallery.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+.hero .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.banner {
+  animation: blink 3s infinite;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
